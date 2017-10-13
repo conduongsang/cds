@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<!-- <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url(); ?>files/share/<?= configs('ICO_BROWSER');?>"> -->
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/ico_browser.png') }}">
 
 
 	<link href="{{ asset('backend/css/reset.css') }}" rel="stylesheet" type="text/css" />
@@ -22,12 +22,12 @@
         <![endif]
     -->
 
-    <script src="<?php echo url_tmpl(); ?>resources/plugins/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
-    <script src="<?php echo url_tmpl(); ?>resources/plugins/dialogbox/js/dialogbox.js"></script>
-    <script src="<?php echo url_tmpl(); ?>resources/plugins/gui.js"></script>
+    <script src="{{ asset('backend/plugins/jquery/3.1.1/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('backend/plugins/dialogbox/js/dialogbox.js') }}"></script>
+    <script src="{{ asset('backend/plugins/gui.js') }}"></script>
 </head>
 <body style="overflow: hidden;">
-	<div class="uil <?= ($_SESSION['opensibar']) ? '' : 'close_left'; ?>" id="uil">
+	<div class="uil close_left" id="uil">
 		<div class="uil_top clearfix">
 			@include('backendLayout/leftTopUI')
 		</div>
@@ -38,7 +38,7 @@
 			@include('backendLayout/leftBottomUI')
 		</div>
 	</div>
-	<div class="uir <?= ($_SESSION['opensibar']) ? '' : 'open_right'; ?>" id="uir">
+	<div class="uir open_right" id="uir">
 		<div class="uir_top">
 			@include('backendLayout/rightTopUI')
 		</div>
@@ -56,7 +56,7 @@
 		var path_js = '';
 		var path_ns = '';
 		$(document).ready(function () {
-			//$(document.body).gui();
+			$(document.body).gui();
 		});
 	</script>
 </body>
