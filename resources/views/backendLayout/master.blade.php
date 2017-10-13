@@ -27,7 +27,7 @@
     <script src="{{ asset('backend/plugins/gui.js') }}"></script>
 </head>
 <body style="overflow: hidden;">
-	<div class="uil close_left" id="uil">
+	<div class="uil open_left" id="uil">
 		<div class="uil_top clearfix">
 			@include('backendLayout/leftTopUI')
 		</div>
@@ -38,7 +38,7 @@
 			@include('backendLayout/leftBottomUI')
 		</div>
 	</div>
-	<div class="uir open_right" id="uir">
+	<div class="uir close_right" id="uir">
 		<div class="uir_top">
 			@include('backendLayout/rightTopUI')
 		</div>
