@@ -1,4 +1,8 @@
 @font-face {
-	font-family: 'Arsenal Regular';
-	src:url('Arsenal/Arsenal-Regular.ttf') format('truetype');
+    font-family: 'Arsenal Regular';
+    src:url('Arsenal/Arsenal-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Arsenal Bold';
+    src:url('Arsenal/Arsenal-Bold.ttf') format('truetype');
 }
